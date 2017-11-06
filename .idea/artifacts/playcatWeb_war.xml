@@ -1,0 +1,8 @@
+<component name="ArtifactManager">
+  <artifact type="war" name="playcatWeb:war">
+    <output-path>$PROJECT_DIR$/target</output-path>
+    <root id="archive" name="playcat.war">
+      <element id="artifact" artifact-name="playcatWeb:war exploded" />
+    </root>
+  </artifact>
+</component>

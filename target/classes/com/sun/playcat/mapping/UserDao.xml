@@ -1,0 +1,167 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<!-- 为这个mapper指定一个唯一的namespace，namespace的值习惯上设置成包名+sql映射文件名，这样就能够保证namespace的值是唯一的
+例如namespace="me.gacl.mapping.userMapper"就是me.gacl.mapping(包名)+userMapper(userMapper.xml文件去除后缀)
+ -->
+<mapper namespace="com.sun.playcat.dao.UserDao">
+    <!-- 在select标签中编写查询的SQL语句， 设置select标签的id属性为getUser，id属性值必须是唯一的，不能够重复
+    使用parameterType属性指明查询时使用的参数类型，resultType属性指明查询返回的结果集类型
+    resultType="me.gacl.domain.User"就表示将查询结果封装成一个User类的对象返回
+    User类就是users表所对应的实体类
+    -->
+    <!--
+    可重复使用
+     -->
+    <sql id="userColumns">${alias}.id,${alias}.name</sql>
+
+    <resultMap id="userResultMoney" type="User">
+        <id property="id" column="id"></id>
+        <result property="name" column="name"></result>
+    </resultMap>
+    <select id="count" resultType="int" parameterType="User">
+        select count(id) from user
+              <trim prefix="where" prefixOverrides="and|or">
+                   <if test="name!=null and name.length()>0">
+                      or `name` = #{name}
+                   </if>
+                   <if test="phone!=null and phone.length()>0">
+                      or phone = #{phone}
+                   </if>
+               </trim>
+    </select>
+    <select id="getUser" parameterType="User" resultType="User">
+        select id,`name`,phone,sex,city,photo,gold,
+        zhuan,`level`,`count`,`create`,`update`,
+        status,phone2,token,imei,version,qq,address,weixin from user
+        <trim prefix="where" prefixOverrides="and|or">
+            <if test="name!=null and name.length()>0">
+                or `name` = #{name}
+            </if>
+            <if test="phone!=null and phone.length()>0">
+                or phone = #{phone}
+            </if>
+            <if test="id!=null and id>0">
+                or id = #{id}
+            </if>
+        </trim>
+    </select>
+
+    <select id="getMoney" parameterType="int" resultType="User">
+        select id,gold,zhuan from user where id=#{id}
+    </select>
+    <insert id="insertUser" parameterType="User"
+            useGeneratedKeys="true" keyProperty="id">
+        insert into user (`name`,phone,password,sex,city,photo,gold,
+        zhuan,`level`,`count`,`create`,`update`,status,phone2,token,imei,version,qq,address,weixin)
+        values (#{name},#{phone},#{password},#{sex},#{city},#{photo},#{gold},
+        #{zhuan},#{level},#{count},#{create},#{update},#{status},#{phone2},#{token},#{imei},#{version},#{qq},#{address},#{weixin})
+    </insert>
+    <update id="updateUser" parameterType="User">
+        update user set
+        name=#{name},sex=#{sex},city=#{city},photo=#{photo}
+        where id=#{id}
+    </update>
+    <select id="login" parameterType="User"
+            resultType="User">
+        select id,imei,name,phone,password,token,photo from user where password=#{password} and status=1
+
+        <if test="phone!=null and phone.length()>0">
+            and phone = #{phone}
+        </if>
+        <if test="id!=null and id>0">
+            and id = #{id}
+        </if>
+
+    </select>
+    <update id="addGold">
+        update user set
+        gold=gold+#{gold} where id=#{id}
+    </update>
+    <update id="subGold">
+        update user set
+        gold=gold-#{gold} where id=#{id}
+    </update>
+    <update id="updateGold">
+        update user set
+        gold=#{gold} where id=#{id}
+    </update>
+    <update id="updateToken">
+        update user set
+        token=#{token} where id=#{id}
+    </update>
+    <update id="addZuan">
+        update user set
+        zhuan=zhuan+#{zuan} where id=#{id}
+    </update>
+    <update id="subZuan">
+        update user set
+        zhuan=zhuan-#{zuan} where id=#{id}
+    </update>
+    <update id="updateZuan">
+        update user set
+        zhuan=#{zuan} where id=#{id}
+    </update>
+    <update id="updatePassword">
+        update user set
+        password=#{password}
+        <choose>
+            <when test="id!=null and id>0">
+                where   id = #{id}
+            </when>
+            <otherwise>
+                where   phone = #{phone}
+            </otherwise>
+        </choose>
+    </update>
+    <update id="updateQQ">
+        update user set
+        qq=#{qq} where id=#{id}
+    </update>
+    <update id="updatePhone2">
+        update user set
+        phone2=#{phone2} where id=#{id}
+    </update>
+    <update id="updateAddress" >
+        update user set
+        address=#{address} where id=#{id}
+    </update>
+    <update id="updateWeixin">
+        update user set
+        weixin=#{weixin} where id=#{id}
+    </update>
+    <delete id="deleteUser">
+        delete from user where id=#{id}
+    </delete>
+    <update id="updatePhoto">
+        update user set
+        photo=#{photo} where id=#{id}
+    </update>
+    <update id="updateName">
+        update user set
+        `name`=#{name} where id=#{id}
+    </update>
+    <update id="updateSex">
+        update user set
+        sex=#{sex} where id=#{id}
+    </update>
+    <update id="updateCity">
+        update user set
+        city=#{city} where id=#{id}
+    </update>
+    <!--SQL模块
+<sql id="sometable">${prefix}Table
+</sql>
+<sql id="someinclude"> from
+<include refid="${include_target}"/>
+</sql>
+
+<select id="select" resultType="map"> select
+field1, field2, field3
+<include refid="someinclude">
+<property name="prefix" value="Some"/>
+<property name="include_target" value="sometable"/>
+</include>
+</select>
+
+    -->
+</mapper>

@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="initial-scale=0.5, maximum-scale=0.5, minimum-scale=0.5, user-scalable=no">
+    <title>游戏规则</title>
+    <link href="/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<style>
+    body{
+        font-size: 14px;
+        padding: 15px;
+    }
+    strong{
+        font-size: 17px;
+    }
+</style>
+<body>
+<div th:utext="${game.getRule()}">...</div>
+<script src="/js/jquery.min.js"></script>
+<script src="/js/bootstrap.min.js"></script>
+</body>
+<script>
+    $(document).ready(function() {
+        $("img").addClass("img-responsive center-block");
+    })
+</script>
+</html>

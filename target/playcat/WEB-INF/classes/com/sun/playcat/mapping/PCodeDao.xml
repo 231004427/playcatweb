@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.sun.playcat.dao.PCodeDao">
+    <select id="checkPhone" resultType="int" parameterType="PCode">
+        select count(*) from user WHERE phone LIKE #{phone}
+    </select>
+    <select id="checkCode" resultType="int" parameterType="PCode">
+        select count(*) from pcode
+        where
+        create_time > DATE_SUB(NOW(),INTERVAL  1 HOUR)
+        AND phone LIKE #{phone}
+        AND code LIKE #{code}
+        AND status=1
+    </select>
+    <insert id="insertCode" parameterType="PCode"
+            useGeneratedKeys="true" keyProperty="id">
+        insert into pcode (phone,code,create_time,status)
+        values (#{phone},#{code},#{create_time},#{status})
+    </insert>
+    <update id="updateCode" parameterType="PCode">
+        update pcode set
+        status=#{status}
+        where phone=#{phone}
+    </update>
+</mapper>

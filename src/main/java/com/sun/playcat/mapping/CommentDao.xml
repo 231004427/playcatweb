@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.sun.playcat.dao.CommentDao">
+    <resultMap id="ResultList" type="Comment">
+        <id property="id" column="id"></id>
+        <result property="user_id" column="user_id"></result>
+        <result property="name" column="name"></result>
+        <result property="photo" column="photo"></result>
+        <result property="level" column="level"></result>
+        <result property="content" column="content"></result>
+        <result property="good_num" column="good_num"></result>
+        <result property="reply_num" column="reply_num"></result>
+        <result property="create_time" column="create_time"></result>
+    </resultMap>
+    <select id="search" resultMap="ResultList">
+        select a.id,a.user_id,a.content,a.good_num,a.reply_num,a.create_time,b.photo,b.name,b.level from comment a
+        left join user b on a.user_id=b.id
+        <trim prefix="where" prefixOverrides="and|or">
+            <if test="sid!=null and sid>0">
+                and a.sid=#{sid}
+            </if>
+            <if test="userId!=null and userId>0">
+                and a.user_id =#{userId}
+            </if>
+            <if test="type!=null and type>0">
+                and a.type =#{type}
+            </if>
+            <if test="status!=null and status>0">
+                and a.status =#{status}
+            </if>
+        </trim>
+        LIMIT #{start},#{pageNum}
+    </select>
+    <select id="searchCount" resultType="int">
+        select count(*) from comment
+        <trim prefix="where" prefixOverrides="and|or">
+            <if test="sid!=null and sid>0">
+                and sid=#{sid}
+            </if>
+            <if test="userId!=null and userId>0">
+                and user_id =#{userId}
+            </if>
+            <if test="type!=null and type>0">
+                and `type` =#{type}
+            </if>
+            <if test="status!=null and status>0">
+                and `type` =#{status}
+            </if>
+        </trim>
+    </select>
+    <insert id="insert" parameterType="Comment"
+            useGeneratedKeys="true" keyProperty="id">
+        insert into comment (id,sid,rid,user_id,`type`,content,good_num,reply_num,create_time,status)
+        values (#{id},#{sid},#{rid},#{user_id},#{type},#{content},#{good_num},#{reply_num},#{create_time},#{status})
+    </insert>
+</mapper>

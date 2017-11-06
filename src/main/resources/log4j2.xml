@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- status=debug 可以查看log4j的装配过程 -->
+<configuration status="off" monitorInterval="300">
+    <properties>
+        <property name="LOG_HOME">log/bin/devLog</property>
+        <property name="BACKUP_HOME">{LOG_HOME}/backup</property>
+        <property name="SERVER_NAME">playcat</property>
+    </properties>
+    <appenders>
+        <!-- 定义控制台输出 -->
+        <Console  name="Console" target="SYSTEM_OUT" follow="true">
+            <!--控制台只输出level及以上级别的信息（onMatch），其他的直接拒绝（onMismatch）-->
+            <ThresholdFilter level="debug" onMatch="ACCEPT" onMismatch="DENY"/>
+            <PatternLayout pattern="[playcat-console] %date{yyyy-MM-dd HH:mm:ss.SSS} %level [%thread][%file:%line] - %msg%n" />
+        </Console >
+
+        <!-- 程序员调试日志 -->
+        <RollingRandomAccessFile name="DevLog" append="true"
+                                 fileName="${LOG_HOME}/${SERVER_NAME}"
+                                 filePattern="${LOG_HOME}/${SERVER_NAME}.%d{yyyy-MM-dd-HH}.log">
+            <!--
+    %d{yyyy-MM-dd HH:mm:ss, SSS} : 日志生产时间
+    %p : 日志输出格式
+    %c : logger的名称
+    %m : 日志内容，即 logger.info("message")
+    %n : 换行符
+    %C : Java类名
+    %L : 日志输出所在行数
+    %M : 日志输出所在方法名
+    hostName : 本地机器名
+    hostAddress : 本地ip地址
+    -->
+            <PatternLayout pattern="[playcat] %date{yyyy-MM-dd HH:mm:ss.SSS} %level [%thread][%file:%line] - %msg%n" />
+            <Policies>
+                <TimeBasedTriggeringPolicy interval="1" modulate="true" />
+            </Policies>
+        </RollingRandomAccessFile>
+        <!-- 失败数据日志 -->
+        <RollingRandomAccessFile name="ErrorData" append="true"
+                                 fileName="${LOG_HOME}/ErrorData/${SERVER_NAME}"
+                                 filePattern="${LOG_HOME}/ErrorData/${SERVER_NAME}.%d{yyyy-MM-dd-HH}.log">
+            <PatternLayout pattern="[playcat] %date{yyyy-MM-dd HH:mm:ss.SSS} - %msg%n" />
+            <Policies>
+                <!-- TimeBased Triggering Policy
+基于时间的触发策略。该策略主要是完成周期性的log文件封存工作。有两个参数：
+interval，integer型，指定两次封存动作之间的时间间隔。单位:以日志的命名精度来确定单位，
+比如上面的filePattern中的yyyy-MM-dd-HH 单位为小时，yyyy-MM-dd-HH-mm 单位为分钟
+modulate，boolean型，说明是否对封存时间进行调制。若modulate=true，则封存时间将以0点为边界进行偏移计算。
+比如，modulate=true，interval=4hours，那么假设上次封存日志的时间为03:00，则下次封存日志的时间为04:00，
+之后的封存时间依次为08:00，12:00，16:00，。。。-->
+                <TimeBasedTriggeringPolicy interval="1" modulate="true" />
+            </Policies>
+        </RollingRandomAccessFile>
+        <!-- 无法解析数据日志 -->
+        <RollingRandomAccessFile name="UnparseData" append="true"
+                                 fileName="${LOG_HOME}/UnparseData/${SERVER_NAME}"
+                                 filePattern="${LOG_HOME}/UnparseData/${SERVER_NAME}.%d{yyyy-MM-dd-HH}.log">
+            <PatternLayout pattern="[playcat] %date{yyyy-MM-dd HH:mm:ss.SSS} - %msg%n" />
+            <Policies>
+                <TimeBasedTriggeringPolicy interval="1" modulate="true" />
+            </Policies>
+        </RollingRandomAccessFile>
+
+        <!-- KafkaConsumer日志数据 -->
+        <RollingRandomAccessFile name="KafkaConsumer" append="true"
+                                 fileName="${LOG_HOME}/KafkaConsumer/${SERVER_NAME}"
+                                 filePattern="${LOG_HOME}/KafkaConsumer/${SERVER_NAME}.%d{yyyy-MM-dd-HH}.log">
+            <PatternLayout pattern="[playcat] %date{yyyy-MM-dd HH:mm:ss.SSS} - %msg%n" />
+            <Policies>
+                <TimeBasedTriggeringPolicy interval="1" modulate="true" />
+            </Policies>
+        </RollingRandomAccessFile>
+    </appenders>
+    <loggers>
+        <!-- 3rdparty Loggers -->
+        <logger name="slf4j2" level="ERROR" />
+        <logger name="org.springframework.core" level="ERROR" />
+        <logger name="org.springframework.beans" level="ERROR" />
+        <logger name="org.springframework.context" level="ERROR" />
+        <logger name="org.springframework.web" level="ERROR" />
+        <logger name="com.alibaba.dubbo" level="${logger.level}" />
+        <logger name="org.mybatis" level="ERROR" />
+        <logger name="com.mchange.v2" level="ERROR" />
+        <logger name="org.eclipse.jetty" level="ERROR" />
+        <logger name="org.apache.zookeeper" level="${logger.level}" />
+        <!--收集下面logger标签的数据流日志的。logger的 additivity 属性要设置为true，这样才能打印在root的appender中 -->
+        <!--一些没有定义的logger的name也会输出在root的appender文件下。比如：
+        public static final Logger unparseLogger = LoggerFactory.getLogger("serializeTools.class");
+        serializeTools.class类的包名没有定义<logger name> 那么他就会在输出在root下的appender
+        trace,debug,info,warn,error,fatal
+        -->
+        <root level="debug">
+            <appender-ref ref="DevLog" />
+            <appender-ref ref="Console" />
+        </root>
+
+        <logger name="com.sun.playcat" level="error">
+            <appender-ref ref="ErrorData" />
+        </logger>
+
+
+        <!--由public static final Logger unparseLogger = LoggerFactory.getLogger("UnparseData");
+        定义日志级别大于info的， info/warn/ERROR/FATAL会被输出到下面的appender。
+
+        <logger name="UnparseData" level="info" additivity="false">
+            <appender-ref ref="UnparseData" />
+        </logger>-->
+        <!--public static final Logger KafkaConsumerLogger = LoggerFactory.getLogger("MyKafkaConsumer.class");
+        MyKafkaConsumer的类名为com.embd.fingerprint.kafka.client.MyKafkaConsumer输出时就会输出到下面appender中
+        <logger name="com.sun.ssm.controller" level="debug" additivity="false">
+            <appender-ref ref="KafkaConsumer"/>
+        </logger>-->
+    </loggers>
+</configuration>

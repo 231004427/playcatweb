@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.sun.playcat.dao.MessageDao">
+    <select id="searchCount" resultType="int" parameterType="MessageList">
+        select count(*) from message
+        <trim prefix="where" prefixOverrides="and|or">
+            <if test="to_user!=null and to_user>0 and from_user!=null and from_user>0">
+                and ((to_user=#{to_user} and from_user=#{from_user}) or (to_user=#{from_user} and from_user=#{to_user}))
+            </if>
+            <if test="type!=null and type>0">
+                and type=#{type}
+            </if>
+            <if test="create_time!=null">
+                and create_time>#{create_time}
+            </if>
+            and status in (1,2,3,4)
+        </trim>
+    </select>
+    <select id="search" resultType="Message" parameterType="MessageList">
+        select a.*,b.name as 'from_name',b.photo as 'from_photo',b.sex as 'from_sex' from message a
+        left join user b on a.`from_user`=b.`id`
+        <trim prefix="where" prefixOverrides="and|or">
+            <if test="to_user!=null and to_user>0 and from_user!=null and from_user>0">
+                and ((a.to_user=#{to_user} and a.from_user=#{from_user}) or (a.to_user=#{from_user} and a.from_user=#{to_user}))
+            </if>
+
+            <if test="type!=null and type>0">
+                and a.type=#{type}
+            </if>
+            <if test="create_time!=null">
+                and a.create_time>#{create_time}
+            </if>
+            and a.status in (1,2,3,4)
+        </trim>
+        order by a.id desc
+        LIMIT #{start},#{pageNum}
+    </select>
+    <insert id="insert" parameterType="Message"
+            useGeneratedKeys="true" keyProperty="id">
+        insert into message (from_user,to_user,vesion,`type`,`length`,`data`,status,create_time)
+        values(#{from_user},#{to_user},#{vesion},#{type},#{length},#{data},#{status},#{create_time})
+    </insert>
+    <update id="updateRead" parameterType="Message">
+        update message set
+        status=4
+        where from_user=#{from_user} and to_user=#{to_user} and status in (1,2,3)
+    </update>
+    <update id="updateStatus" parameterType="Message">
+        update message set
+        status=#{status}
+        <trim prefix="where" prefixOverrides="and|or">
+            <if test="id!=null and id>0">
+                and id=#{id}
+            </if>
+            <if test="from_user!=null and from_user>0">
+                and from_user=#{from_user}
+            </if>
+            <if test="to_user!=null and to_user>0">
+                and to_user=#{to_user}
+            </if>
+        </trim>
+    </update>
+    <update id="updateStatusList" parameterType="java.util.List">
+        update message
+        <trim prefix="set" suffixOverrides=",">
+            <trim prefix="status =case" suffix="end,">
+                <foreach collection="list" item="item" index="index">
+                    when id=#{item.id} then #{item.status}
+                </foreach>
+            </trim>
+        </trim>
+        where id in
+        <foreach collection="list" index="index" item="item" separator="," open="(" close=")">
+            #{item.id,jdbcType=BIGINT}
+        </foreach>
+    </update>
+</mapper>

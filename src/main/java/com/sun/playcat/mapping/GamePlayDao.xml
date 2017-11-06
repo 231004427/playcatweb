@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.sun.playcat.dao.GamePlayDao">
+    <resultMap id="getTopListResult" type="GamePlay">
+        <id property="id" column="id"></id>
+        <result property="user_id" column="user_id"></result>
+        <result property="game_id" column="game_id"></result>
+        <result property="level" column="level"></result>
+        <result property="points" column="points"></result>
+        <result property="user_name" column="user_name"></result>
+        <result property="user_level" column="user_level"></result>
+        <result property="user_photo" column="user_photo"></result>
+    </resultMap>
+    <select id="getTopList" resultMap="getTopListResult">
+        select a.id,a.user_id,a.game_id,a.level,a.points,b.name as user_name,b.level as user_level,b.photo as user_photo from game_play a
+        left join user b on a.user_id=b.id
+        where a.game_id=#{game_id} and a.status=1 order by points desc
+        limit #{start},#{pageNum}
+    </select>
+    <select id="getUserList" resultType="GamePlay">
+        select a.id,a.user_id,a.game_id,a.level,a.points,b.name as game_name,b.ico as game_ico from game_play a
+        left join game b on a.game_id=b.id
+        where a.user_id=#{user_id} and a.status=1 order by points desc
+        limit #{start},#{pageNum}
+    </select>
+    <insert id="insert" parameterType="GamePlay"
+            useGeneratedKeys="true" keyProperty="id">
+        insert into game_play (user_id,game_id,points,online,`level`,`type`,create_time,last_time,status)
+        values (#{user_id},#{game_id},#{points},#{online},#{level},#{type},#{create_time},#{last_time},#{status})
+    </insert>
+    <select id="getTopListCount" parameterType="int" resultType="int">
+        select count(*) from game_play
+        where game_id =#{game_id} and status=1
+    </select>
+    <select id="getUserListCount" parameterType="int" resultType="int">
+        select count(*) from game_play
+        where game_id =#{user_id} and status=1
+    </select>
+</mapper>

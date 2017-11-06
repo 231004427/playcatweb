@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.sun.playcat.dao.GameDao">
+    <resultMap id="gameResultList" type="Game">
+        <id property="id" column="id"></id>
+        <result property="name" column="name"></result>
+        <result property="note" column="note"></result>
+        <result property="note2" column="note2"></result>
+        <result property="ico" column="ico"></result>
+        <result property="img" column="img"></result>
+        <result property="playerNum" column="player_num"></result>
+    </resultMap>
+    <resultMap id="gameGetRule" type="Game">
+        <id property="id" column="id"></id>
+        <result property="rule" column="rule"></result>
+    </resultMap>
+    <select id="search" resultMap="gameResultList">
+        select id,name,note,ico,img,player_num from game
+        <trim prefix="where" prefixOverrides="and|or">
+            <if test="isgood!=null and isgood>0">
+                and isgood=#{isgood}
+            </if>
+            <if test="type!=null and type>0">
+                and type =#{type}
+            </if>
+        </trim>
+        LIMIT #{start},#{pageNum}
+    </select>
+    <select id="searchCount" resultType="int">
+        select count(*) from game
+        <trim prefix="where" prefixOverrides="and|or">
+            <if test="isgood!=null and isgood>0">
+                and isgood=#{isgood}
+            </if>
+            <if test="type!=null and type>0">
+                and type =#{type}
+            </if>
+        </trim>
+    </select>
+    <select id="getRule" parameterType="int"
+            resultMap="gameGetRule">
+        select id,rule from game where id=#{id}
+    </select>
+    <select id="getGame" parameterType="int"
+            resultType="Game">
+        select id,name,note,note2,type,ico,img,img_big,tag,online_num,player_num,ok_num,sort_num,version,down,create_time,isgood,status from game where id=#{id}
+    </select>
+    <update id="upOkNum" parameterType="int">
+        update game set ok_num=ok_num+1 where id=#{id}
+    </update>
+    <update id="downOkNum" parameterType="int">
+        update game set ok_num=ok_num-1 where id=#{id}
+    </update>
+</mapper>

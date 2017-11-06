@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.sun.playcat.dao.GoodsDao">
+    <select id="search" resultType="Goods">
+        select * from goods where status=1
+            <if test="type!=null and type>0">
+                and type =#{type}
+            </if>
+        order by order_num,create_time desc
+        LIMIT #{start},#{pageNum}
+    </select>
+    <select id="selectPrice" resultType="Goods">
+        select id,price,stock,goods_value,title,head_img from goods where id=#{id}
+    </select>
+    <select id="searchCount" resultType="int">
+        select count(*) from goods where status=1
+        <if test="type!=null and type>0">
+            and type =#{type}
+        </if>
+    </select>
+</mapper>
