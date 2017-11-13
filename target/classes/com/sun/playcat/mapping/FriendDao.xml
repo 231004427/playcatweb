@@ -89,6 +89,12 @@
         insert into friend (user_id,friend_id,create_time,status,group_id,`type`)
         values(#{user_id},#{friend_id},#{create_time},#{status},#{group_id},#{type})
     </insert>
+    <delete id="delete" parameterType="Friend">
+        delete from friend where (user_id=#{user_id} and friend_id=#{friend_id}) or (user_id=#{friend_id} and friend_id=#{user_id})
+    </delete>
+    <select id="get" parameterType="Friend" resultType="Friend">
+        select * from friend where user_id=#{user_id} and friend_id=#{friend_id} and status=1
+    </select>
     <update id="setNoRead" parameterType="Friend">
         update friend set
         no_read=#{no_read}

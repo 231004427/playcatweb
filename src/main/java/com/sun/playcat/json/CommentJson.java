@@ -2,6 +2,7 @@ package com.sun.playcat.json;
 
 import com.google.gson.Gson;
 import com.google.gson.GsonBuilder;
+import com.sun.playcat.common.GsonHelp;
 import com.sun.playcat.common.Log;
 import com.sun.playcat.dao.CommentDao;
 import com.sun.playcat.domain.*;
@@ -14,7 +15,7 @@ public class CommentJson {
     public Gson gson;
     private WebApplicationContext webApplicationContext;
     public CommentJson(WebApplicationContext context){
-        gson=new GsonBuilder().create();
+        gson= GsonHelp.getGsonObj();
         webApplicationContext=context;
     }
     public String add(BaseRequest baseRequest){

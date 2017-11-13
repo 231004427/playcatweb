@@ -1,4 +1,5 @@
 import com.google.gson.Gson;
+import com.google.gson.GsonBuilder;
 import com.sun.playcat.dao.GameDao;
 import com.sun.playcat.domain.Game;
 import com.sun.playcat.domain.GameList;
@@ -35,7 +36,9 @@ public class GameTest {
 
         game=gameService.getGame(1);
 
-        Gson gson=new Gson();
+        Gson gson= new GsonBuilder()
+                .setDateFormat("yyyy-MM-dd HH:mm:ss")
+                .create();
         String  gsonStr=gson.toJson(game);
         assert(!gsonStr.isEmpty());
     }
@@ -43,7 +46,9 @@ public class GameTest {
     @Test
     public void Search()
     {
-        Gson gson=new Gson();
+        Gson gson= new GsonBuilder()
+                .setDateFormat("yyyy-MM-dd HH:mm:ss")
+                .create();
         GameList gameList=new GameList();
         gameList.setIsGood(0);
         gameList.setType(0);

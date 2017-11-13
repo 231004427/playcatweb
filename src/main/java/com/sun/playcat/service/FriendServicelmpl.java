@@ -26,13 +26,26 @@ public class FriendServicelmpl implements FriendDao {
     @Override
     public void insert(Friend friend) {
         friendDao.insert(friend);
+        int uid=friend.getUser_id();
+        friend.setUser_id(friend.getFriend_id());
+        friend.setFriend_id(uid);
+        friendDao.insert(friend);
+    }
+
+    @Override
+    public Friend get(Friend friend) {
+        return friendDao.get(friend);
+    }
+
+    @Override
+    public void delete(Friend friend) {
+        friendDao.delete(friend);
     }
 
     @Override
     public int searchCount(FriendList friendList) {
         return friendDao.searchCount(friendList);
     }
-
     @Override
     public int insertCount(Friend friend) {
         return friendDao.insertCount(friend);

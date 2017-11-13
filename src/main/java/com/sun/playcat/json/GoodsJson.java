@@ -2,6 +2,7 @@ package com.sun.playcat.json;
 
 import com.google.gson.Gson;
 import com.google.gson.GsonBuilder;
+import com.sun.playcat.common.GsonHelp;
 import com.sun.playcat.common.Log;
 import com.sun.playcat.dao.GoodsDao;
 import com.sun.playcat.domain.ActionType;
@@ -17,7 +18,7 @@ public class GoodsJson {
     public Gson gson;
     private WebApplicationContext webApplicationContext;
     public GoodsJson(WebApplicationContext context){
-        gson=new GsonBuilder().create();
+        gson= GsonHelp.getGsonObj();
         webApplicationContext=context;
     }
     public String search(BaseRequest baseRequest){

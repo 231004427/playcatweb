@@ -19,6 +19,14 @@ public class FriendTest {
     @Resource
     private FriendDao friendService;
     @Test
+    public void get(){
+        Friend friend=new Friend();
+        friend.setUser_id(10014);
+        friend.setFriend_id(10012);
+        friend=friendService.get(friend);
+        assert (friend!=null);
+    }
+    @Test
     public void insert(){
         Friend friend=new Friend();
         friend.setFriend_id(1);

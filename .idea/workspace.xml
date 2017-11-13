@@ -1,7 +1,67 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="cbc2cf43-4025-4c1b-8eca-0b236eb8e7f7" name="Default" comment="" />
+    <list default="true" id="cbc2cf43-4025-4c1b-8eca-0b236eb8e7f7" name="Default" comment="">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/vcs.xml" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/playcat/WEB-INF/lib/gson-2.8.1.jar" afterPath="" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_google_code_gson_gson_2_8_1.xml" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_google_code_gson_gson_2_8_2.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/log/bin/devLog/playcat" afterPath="$PROJECT_DIR$/log/bin/devLog/playcat" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/com/sun/playcat/controller/ApiController.class" afterPath="$PROJECT_DIR$/target/classes/com/sun/playcat/controller/ApiController.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/com/sun/playcat/dao/FriendDao.class" afterPath="$PROJECT_DIR$/target/classes/com/sun/playcat/dao/FriendDao.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/com/sun/playcat/domain/ActionType.class" afterPath="$PROJECT_DIR$/target/classes/com/sun/playcat/domain/ActionType.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/com/sun/playcat/json/BaseJson.class" afterPath="$PROJECT_DIR$/target/classes/com/sun/playcat/json/BaseJson.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/com/sun/playcat/json/CollectJson.class" afterPath="$PROJECT_DIR$/target/classes/com/sun/playcat/json/CollectJson.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/com/sun/playcat/json/CommentJson.class" afterPath="$PROJECT_DIR$/target/classes/com/sun/playcat/json/CommentJson.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/com/sun/playcat/json/FriendJson.class" afterPath="$PROJECT_DIR$/target/classes/com/sun/playcat/json/FriendJson.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/com/sun/playcat/json/GameJson.class" afterPath="$PROJECT_DIR$/target/classes/com/sun/playcat/json/GameJson.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/com/sun/playcat/json/GoodsJson.class" afterPath="$PROJECT_DIR$/target/classes/com/sun/playcat/json/GoodsJson.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/com/sun/playcat/json/MainAction.class" afterPath="$PROJECT_DIR$/target/classes/com/sun/playcat/json/MainAction.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/com/sun/playcat/json/MessageJson.class" afterPath="$PROJECT_DIR$/target/classes/com/sun/playcat/json/MessageJson.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/com/sun/playcat/json/PCodeJson.class" afterPath="$PROJECT_DIR$/target/classes/com/sun/playcat/json/PCodeJson.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/com/sun/playcat/json/TokenJson.class" afterPath="$PROJECT_DIR$/target/classes/com/sun/playcat/json/TokenJson.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/com/sun/playcat/service/FriendServicelmpl.class" afterPath="$PROJECT_DIR$/target/classes/com/sun/playcat/service/FriendServicelmpl.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/playcat/WEB-INF/classes/com/sun/playcat/controller/ApiController.class" afterPath="$PROJECT_DIR$/target/playcat/WEB-INF/classes/com/sun/playcat/controller/ApiController.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/playcat/WEB-INF/classes/com/sun/playcat/dao/FriendDao.class" afterPath="$PROJECT_DIR$/target/playcat/WEB-INF/classes/com/sun/playcat/dao/FriendDao.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/playcat/WEB-INF/classes/com/sun/playcat/domain/ActionType.class" afterPath="$PROJECT_DIR$/target/playcat/WEB-INF/classes/com/sun/playcat/domain/ActionType.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/playcat/WEB-INF/classes/com/sun/playcat/json/BaseJson.class" afterPath="$PROJECT_DIR$/target/playcat/WEB-INF/classes/com/sun/playcat/json/BaseJson.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/playcat/WEB-INF/classes/com/sun/playcat/json/CollectJson.class" afterPath="$PROJECT_DIR$/target/playcat/WEB-INF/classes/com/sun/playcat/json/CollectJson.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/playcat/WEB-INF/classes/com/sun/playcat/json/CommentJson.class" afterPath="$PROJECT_DIR$/target/playcat/WEB-INF/classes/com/sun/playcat/json/CommentJson.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/playcat/WEB-INF/classes/com/sun/playcat/json/FriendJson.class" afterPath="$PROJECT_DIR$/target/playcat/WEB-INF/classes/com/sun/playcat/json/FriendJson.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/playcat/WEB-INF/classes/com/sun/playcat/json/GameJson.class" afterPath="$PROJECT_DIR$/target/playcat/WEB-INF/classes/com/sun/playcat/json/GameJson.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/playcat/WEB-INF/classes/com/sun/playcat/json/GoodsJson.class" afterPath="$PROJECT_DIR$/target/playcat/WEB-INF/classes/com/sun/playcat/json/GoodsJson.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/playcat/WEB-INF/classes/com/sun/playcat/json/MainAction.class" afterPath="$PROJECT_DIR$/target/playcat/WEB-INF/classes/com/sun/playcat/json/MainAction.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/playcat/WEB-INF/classes/com/sun/playcat/json/MessageJson.class" afterPath="$PROJECT_DIR$/target/playcat/WEB-INF/classes/com/sun/playcat/json/MessageJson.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/playcat/WEB-INF/classes/com/sun/playcat/json/PCodeJson.class" afterPath="$PROJECT_DIR$/target/playcat/WEB-INF/classes/com/sun/playcat/json/PCodeJson.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/playcat/WEB-INF/classes/com/sun/playcat/json/TokenJson.class" afterPath="$PROJECT_DIR$/target/playcat/WEB-INF/classes/com/sun/playcat/json/TokenJson.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/playcat/WEB-INF/classes/com/sun/playcat/service/FriendServicelmpl.class" afterPath="$PROJECT_DIR$/target/playcat/WEB-INF/classes/com/sun/playcat/service/FriendServicelmpl.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/test-classes/CollectTest.class" afterPath="$PROJECT_DIR$/target/test-classes/CollectTest.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/test-classes/FriendTest.class" afterPath="$PROJECT_DIR$/target/test-classes/FriendTest.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/test-classes/GameTest.class" afterPath="$PROJECT_DIR$/target/test-classes/GameTest.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/artifacts/playcatWeb_war_exploded.xml" afterPath="$PROJECT_DIR$/.idea/artifacts/playcatWeb_war_exploded.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/playcatWeb.iml" afterPath="$PROJECT_DIR$/playcatWeb.iml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/pom.xml" afterPath="$PROJECT_DIR$/pom.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/sun/playcat/controller/ApiController.java" afterPath="$PROJECT_DIR$/src/main/java/com/sun/playcat/controller/ApiController.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/sun/playcat/dao/FriendDao.java" afterPath="$PROJECT_DIR$/src/main/java/com/sun/playcat/dao/FriendDao.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/sun/playcat/domain/ActionType.java" afterPath="$PROJECT_DIR$/src/main/java/com/sun/playcat/domain/ActionType.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/sun/playcat/json/BaseJson.java" afterPath="$PROJECT_DIR$/src/main/java/com/sun/playcat/json/BaseJson.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/sun/playcat/json/CollectJson.java" afterPath="$PROJECT_DIR$/src/main/java/com/sun/playcat/json/CollectJson.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/sun/playcat/json/CommentJson.java" afterPath="$PROJECT_DIR$/src/main/java/com/sun/playcat/json/CommentJson.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/sun/playcat/json/FriendJson.java" afterPath="$PROJECT_DIR$/src/main/java/com/sun/playcat/json/FriendJson.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/sun/playcat/json/GameJson.java" afterPath="$PROJECT_DIR$/src/main/java/com/sun/playcat/json/GameJson.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/sun/playcat/json/GoodsJson.java" afterPath="$PROJECT_DIR$/src/main/java/com/sun/playcat/json/GoodsJson.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/sun/playcat/json/MainAction.java" afterPath="$PROJECT_DIR$/src/main/java/com/sun/playcat/json/MainAction.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/sun/playcat/json/MessageJson.java" afterPath="$PROJECT_DIR$/src/main/java/com/sun/playcat/json/MessageJson.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/sun/playcat/json/PCodeJson.java" afterPath="$PROJECT_DIR$/src/main/java/com/sun/playcat/json/PCodeJson.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/sun/playcat/json/TokenJson.java" afterPath="$PROJECT_DIR$/src/main/java/com/sun/playcat/json/TokenJson.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/sun/playcat/mapping/FriendDao.xml" afterPath="$PROJECT_DIR$/src/main/java/com/sun/playcat/mapping/FriendDao.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/sun/playcat/service/FriendServicelmpl.java" afterPath="$PROJECT_DIR$/src/main/java/com/sun/playcat/service/FriendServicelmpl.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/java/CollectTest.java" afterPath="$PROJECT_DIR$/src/test/java/CollectTest.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/java/FriendTest.java" afterPath="$PROJECT_DIR$/src/test/java/FriendTest.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/java/GameTest.java" afterPath="$PROJECT_DIR$/src/test/java/GameTest.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/com/sun/playcat/mapping/FriendDao.xml" afterPath="$PROJECT_DIR$/target/classes/com/sun/playcat/mapping/FriendDao.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/playcat/WEB-INF/classes/com/sun/playcat/mapping/FriendDao.xml" afterPath="$PROJECT_DIR$/target/playcat/WEB-INF/classes/com/sun/playcat/mapping/FriendDao.xml" />
+    </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -24,7 +84,86 @@
   </component>
   <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
   <component name="FileEditorManager">
-    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300" />
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file leaf-file-name="FriendJson.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/sun/playcat/json/FriendJson.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="780">
+              <caret line="59" column="53" lean-forward="false" selection-start-line="59" selection-start-column="53" selection-end-line="59" selection-end-column="53" />
+              <folding>
+                <element signature="imports" expanded="false" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="FriendDao.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/sun/playcat/dao/FriendDao.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="240">
+              <caret line="21" column="56" lean-forward="true" selection-start-line="21" selection-start-column="56" selection-end-line="21" selection-end-column="56" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="UserJson.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/sun/playcat/json/UserJson.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="2025">
+              <caret line="150" column="53" lean-forward="false" selection-start-line="150" selection-start-column="49" selection-end-line="150" selection-end-column="53" />
+              <folding>
+                <element signature="imports" expanded="false" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="TokenJson.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/sun/playcat/json/TokenJson.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="420">
+              <caret line="43" column="0" lean-forward="false" selection-start-line="43" selection-start-column="0" selection-end-line="44" selection-end-column="57" />
+              <folding>
+                <element signature="imports" expanded="false" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="FriendServicelmpl.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/sun/playcat/service/FriendServicelmpl.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="375">
+              <caret line="35" column="17" lean-forward="false" selection-start-line="35" selection-start-column="11" selection-end-line="35" selection-end-column="17" />
+              <folding>
+                <element signature="imports" expanded="false" />
+                <element signature="e#1080#1081#0" expanded="false" />
+                <element signature="e#1120#1121#0" expanded="false" />
+                <element signature="e#1187#1188#0" expanded="false" />
+                <element signature="e#1243#1244#0" expanded="false" />
+                <element signature="e#1301#1302#0" expanded="false" />
+                <element signature="e#1353#1354#0" expanded="false" />
+                <element signature="e#1424#1425#0" expanded="false" />
+                <element signature="e#1475#1476#0" expanded="false" />
+                <element signature="e#1548#1549#0" expanded="false" />
+                <element signature="e#1600#1601#0" expanded="false" />
+                <element signature="e#1675#1676#0" expanded="false" />
+                <element signature="e#1731#1732#0" expanded="false" />
+                <element signature="e#1802#1803#0" expanded="false" />
+                <element signature="e#1863#1864#0" expanded="false" />
+                <element signature="e#1924#1925#0" expanded="false" />
+                <element signature="e#1970#1971#0" expanded="false" />
+                <element signature="e#2029#2030#0" expanded="false" />
+                <element signature="e#2073#2074#0" expanded="false" />
+                <element signature="e#2130#2131#0" expanded="false" />
+                <element signature="e#2173#2174#0" expanded="false" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -38,7 +177,18 @@
   <component name="FindInProjectRecents">
     <findStrings>
       <find>comment</find>
+      <find>new Gson()</find>
+      <find>gson=new</find>
+      <find>gson</find>
+      <find>gson=</find>
     </findStrings>
+    <dirStrings>
+      <dir>$PROJECT_DIR$/src</dir>
+      <dir>$PROJECT_DIR$/src/main/java/com/sun/playcat</dir>
+    </dirStrings>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="GradleLocalSettings">
     <option name="externalProjectsViewState">
@@ -48,26 +198,9 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/main/java/com/sun/playcat/domain/ConfigList.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/sun/playcat/dao/ConfigDao.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/sun/playcat/service/ConfigServicelmpl.java" />
-        <option value="$PROJECT_DIR$/src/test/java/ConfigTest.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/sun/playcat/json/ConfigJson.java" />
-        <option value="$PROJECT_DIR$/src/test/java/MessageTest.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/sun/playcat/mapping/FriendDao.xml" />
-        <option value="$PROJECT_DIR$/src/main/java/com/sun/playcat/dao/MessageDao.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/sun/playcat/service/MessageServicelmpl.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/sun/playcat/dao/FriendDao.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/sun/playcat/service/FriendServicelmpl.java" />
-        <option value="$PROJECT_DIR$/src/test/java/FriendTest.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/sun/playcat/common/MD5.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/sun/playcat/domain/Token.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/sun/playcat/mapping/TokenDao.xml" />
-        <option value="$PROJECT_DIR$/src/main/java/com/sun/playcat/mapping/UserDao.xml" />
         <option value="$PROJECT_DIR$/src/main/resources/properties/redis.properties.xml" />
         <option value="$PROJECT_DIR$/src/main/java/com/sun/playcat/common/RedisCache.java" />
         <option value="$PROJECT_DIR$/src/main/resources/spring-redis.xml" />
-        <option value="$PROJECT_DIR$/pom.xml" />
         <option value="$PROJECT_DIR$/src/main/resources/spring-mvc.xml" />
         <option value="$PROJECT_DIR$/src/main/resources/ehcache.xml" />
         <option value="$PROJECT_DIR$/src/main/java/com/sun/playcat/dao/EhCacheTestDao.java" />
@@ -87,18 +220,35 @@
         <option value="$PROJECT_DIR$/src/main/java/com/sun/playcat/common/Token.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/sun/playcat/dao/UserDao.java" />
         <option value="$PROJECT_DIR$/src/test/java/UserTest.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/sun/playcat/json/TokenJson.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/sun/playcat/json/UserJson.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/sun/playcat/service/UserServiceImpl.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/sun/playcat/common/TokenHelp.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/sun/playcat/domain/MessageType.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/sun/playcat/domain/MessageList.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/sun/playcat/json/FriendJson.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/sun/playcat/mapping/MessageDao.xml" />
+        <option value="$PROJECT_DIR$/src/test/java/CollectTest.java" />
+        <option value="$PROJECT_DIR$/src/test/java/GameTest.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/sun/playcat/json/BaseJson.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/sun/playcat/json/CollectJson.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/sun/playcat/json/CommentJson.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/sun/playcat/json/GameJson.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/sun/playcat/json/GoodsJson.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/sun/playcat/json/PCodeJson.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/sun/playcat/common/GsonBinder.java" />
+        <option value="$PROJECT_DIR$/pom.xml" />
+        <option value="$PROJECT_DIR$/src/main/java/com/sun/playcat/common/StringConverter.java" />
+        <option value="$PROJECT_DIR$/src/test/java/BaseRequestTest.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/sun/playcat/common/GsonHelp.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/sun/playcat/json/TokenJson.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/sun/playcat/controller/ApiController.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/sun/playcat/domain/ActionType.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/sun/playcat/json/MainAction.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/sun/playcat/json/FriendJson.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/sun/playcat/service/FriendServicelmpl.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/sun/playcat/dao/FriendDao.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/sun/playcat/mapping/FriendDao.xml" />
+        <option value="$PROJECT_DIR$/src/test/java/FriendTest.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/sun/playcat/json/MessageJson.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/sun/playcat/controller/ApiController.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/sun/playcat/mapping/MessageDao.xml" />
       </list>
     </option>
   </component>
@@ -130,10 +280,10 @@
     </treeState>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="129" />
-    <option name="y" value="-945" />
-    <option name="width" value="1108" />
-    <option name="height" value="695" />
+    <option name="x" value="44" />
+    <option name="y" value="23" />
+    <option name="width" value="1191" />
+    <option name="height" value="699" />
   </component>
   <component name="ProjectInspectionProfilesVisibleTreeState">
     <entry key="Project Default">
@@ -199,7 +349,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scratches" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -229,6 +378,7 @@
           </PATH>
         </subPane>
       </pane>
+      <pane id="Scratches" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -238,9 +388,9 @@
     <property name="nodejs_interpreter_path" value="/usr/local/bin/node" />
     <property name="js.eslint.eslintPackage" value="" />
     <property name="js-jscs-nodeInterpreter" value="/usr/local/bin/node" />
-    <property name="project.structure.last.edited" value="Global Libraries" />
+    <property name="project.structure.last.edited" value="Artifacts" />
     <property name="project.structure.proportion" value="0.15" />
-    <property name="project.structure.side.proportion" value="0.4053309" />
+    <property name="project.structure.side.proportion" value="0.2454044" />
     <property name="DefaultHtmlFileTemplate" value="HTML File" />
   </component>
   <component name="RecentsManager">
@@ -259,27 +409,6 @@
     </key>
   </component>
   <component name="RunManager" selected="Tomcat Server.Unnamed">
-    <configuration default="false" name="TokenHelpTest.insert" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
-      <module name="playcatWeb" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="TokenHelpTest" />
-      <option name="METHOD_NAME" value="insert" />
-      <option name="TEST_OBJECT" value="method" />
-      <option name="VM_PARAMETERS" value="-ea" />
-      <option name="PARAMETERS" value="" />
-      <option name="WORKING_DIRECTORY" value="file://$MODULE_DIR$" />
-      <option name="ENV_VARIABLES" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <option name="TEST_SEARCH_SCOPE">
-        <value defaultName="singleModule" />
-      </option>
-      <envs />
-      <patterns />
-      <method />
-    </configuration>
     <configuration default="false" name="EhCacheTest.getTimestampTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
       <module name="playcatWeb" />
@@ -322,14 +451,14 @@
       <patterns />
       <method />
     </configuration>
-    <configuration default="false" name="TokenHelpTest.get" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration default="false" name="UserTest.login" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
       <module name="playcatWeb" />
       <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
       <option name="ALTERNATIVE_JRE_PATH" />
       <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="TokenHelpTest" />
-      <option name="METHOD_NAME" value="get" />
+      <option name="MAIN_CLASS_NAME" value="UserTest" />
+      <option name="METHOD_NAME" value="login" />
       <option name="TEST_OBJECT" value="method" />
       <option name="VM_PARAMETERS" value="-ea" />
       <option name="PARAMETERS" />
@@ -343,14 +472,35 @@
       <patterns />
       <method />
     </configuration>
-    <configuration default="false" name="UserTest.login" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration default="false" name="BaseRequestTest.testJson" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
       <module name="playcatWeb" />
       <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
       <option name="ALTERNATIVE_JRE_PATH" />
       <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="UserTest" />
-      <option name="METHOD_NAME" value="login" />
+      <option name="MAIN_CLASS_NAME" value="BaseRequestTest" />
+      <option name="METHOD_NAME" value="testJson" />
+      <option name="TEST_OBJECT" value="method" />
+      <option name="VM_PARAMETERS" value="-ea" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="singleModule" />
+      </option>
+      <envs />
+      <patterns />
+      <method />
+    </configuration>
+    <configuration default="false" name="FriendTest.get" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
+      <module name="playcatWeb" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="FriendTest" />
+      <option name="METHOD_NAME" value="get" />
       <option name="TEST_OBJECT" value="method" />
       <option name="VM_PARAMETERS" value="-ea" />
       <option name="PARAMETERS" />
@@ -918,19 +1068,19 @@
     </configuration>
     <list size="6">
       <item index="0" class="java.lang.String" itemvalue="Tomcat Server.Unnamed" />
-      <item index="1" class="java.lang.String" itemvalue="JUnit.TokenHelpTest.insert" />
-      <item index="2" class="java.lang.String" itemvalue="JUnit.EhCacheTest.getTimestampTest" />
-      <item index="3" class="java.lang.String" itemvalue="JUnit.JedisTest.set" />
-      <item index="4" class="java.lang.String" itemvalue="JUnit.TokenHelpTest.get" />
-      <item index="5" class="java.lang.String" itemvalue="JUnit.UserTest.login" />
+      <item index="1" class="java.lang.String" itemvalue="JUnit.EhCacheTest.getTimestampTest" />
+      <item index="2" class="java.lang.String" itemvalue="JUnit.JedisTest.set" />
+      <item index="3" class="java.lang.String" itemvalue="JUnit.UserTest.login" />
+      <item index="4" class="java.lang.String" itemvalue="JUnit.BaseRequestTest.testJson" />
+      <item index="5" class="java.lang.String" itemvalue="JUnit.FriendTest.get" />
     </list>
     <recent_temporary>
       <list size="5">
-        <item index="0" class="java.lang.String" itemvalue="JUnit.UserTest.login" />
-        <item index="1" class="java.lang.String" itemvalue="JUnit.EhCacheTest.getTimestampTest" />
-        <item index="2" class="java.lang.String" itemvalue="JUnit.TokenHelpTest.insert" />
-        <item index="3" class="java.lang.String" itemvalue="JUnit.JedisTest.set" />
-        <item index="4" class="java.lang.String" itemvalue="JUnit.TokenHelpTest.get" />
+        <item index="0" class="java.lang.String" itemvalue="JUnit.FriendTest.get" />
+        <item index="1" class="java.lang.String" itemvalue="JUnit.JedisTest.set" />
+        <item index="2" class="java.lang.String" itemvalue="JUnit.BaseRequestTest.testJson" />
+        <item index="3" class="java.lang.String" itemvalue="JUnit.UserTest.login" />
+        <item index="4" class="java.lang.String" itemvalue="JUnit.EhCacheTest.getTimestampTest" />
       </list>
     </recent_temporary>
   </component>
@@ -1053,44 +1203,47 @@
       <workItem from="1509506100831" duration="12666000" />
       <workItem from="1509601308833" duration="1874000" />
       <workItem from="1509849213729" duration="7855000" />
-      <workItem from="1509936029744" duration="126000" />
+      <workItem from="1509936029744" duration="15931000" />
+      <workItem from="1510032157558" duration="3993000" />
+      <workItem from="1510112737221" duration="6050000" />
+      <workItem from="1510214513475" duration="943000" />
     </task>
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="EhCacheTest_getTimestampTest - 2017.11.01 at 20h 31m 20s.xml">
-      <configuration name="EhCacheTest.getTimestampTest" configurationId="JUnit" />
+    <history-entry file="BaseRequestTest_testJson - 2017.11.06 at 19h 41m 43s.xml">
+      <configuration name="BaseRequestTest.testJson" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="EhCacheTest_getTimestampTest - 2017.11.01 at 20h 33m 02s.xml">
-      <configuration name="EhCacheTest.getTimestampTest" configurationId="JUnit" />
+    <history-entry file="BaseRequestTest_testJson - 2017.11.06 at 19h 47m 05s.xml">
+      <configuration name="BaseRequestTest.testJson" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="EhCacheTest_getTimestampTest - 2017.11.01 at 20h 35m 12s.xml">
-      <configuration name="EhCacheTest.getTimestampTest" configurationId="JUnit" />
+    <history-entry file="BaseRequestTest_testJson - 2017.11.06 at 19h 48m 05s.xml">
+      <configuration name="BaseRequestTest.testJson" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="EhCacheTest_getTimestampTest - 2017.11.01 at 20h 39m 03s.xml">
-      <configuration name="EhCacheTest.getTimestampTest" configurationId="JUnit" />
+    <history-entry file="BaseRequestTest_testJson - 2017.11.06 at 19h 49m 56s.xml">
+      <configuration name="BaseRequestTest.testJson" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="UserTest_login - 2017.11.01 at 21h 05m 44s.xml">
-      <configuration name="UserTest.login" configurationId="JUnit" />
+    <history-entry file="BaseRequestTest_testJson - 2017.11.06 at 19h 50m 24s.xml">
+      <configuration name="BaseRequestTest.testJson" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="UserTest_login - 2017.11.01 at 21h 08m 33s.xml">
-      <configuration name="UserTest.login" configurationId="JUnit" />
+    <history-entry file="BaseRequestTest_testJson - 2017.11.06 at 19h 53m 01s.xml">
+      <configuration name="BaseRequestTest.testJson" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="UserTest_login - 2017.11.01 at 21h 13m 07s.xml">
-      <configuration name="UserTest.login" configurationId="JUnit" />
+    <history-entry file="BaseRequestTest_testJson - 2017.11.06 at 19h 56m 35s.xml">
+      <configuration name="BaseRequestTest.testJson" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="UserTest_login - 2017.11.01 at 21h 17m 00s.xml">
-      <configuration name="UserTest.login" configurationId="JUnit" />
+    <history-entry file="FriendTest_get - 2017.11.08 at 18h 31m 00s.xml">
+      <configuration name="FriendTest.get" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="UserTest_login - 2017.11.01 at 21h 46m 23s.xml">
-      <configuration name="UserTest.login" configurationId="JUnit" />
+    <history-entry file="JedisTest_set - 2017.11.06 at 20h 12m 57s.xml">
+      <configuration name="JedisTest.set" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="UserTest_login - 2017.11.01 at 21h 53m 37s.xml">
-      <configuration name="UserTest.login" configurationId="JUnit" />
+    <history-entry file="JedisTest_set - 2017.11.06 at 20h 14m 05s.xml">
+      <configuration name="JedisTest.set" configurationId="JUnit" />
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="440849000" />
+    <option name="totallyTimeSpent" value="467640000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -1102,13 +1255,13 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="129" y="-945" width="1108" height="695" extended-state="1" />
+    <frame x="44" y="23" width="1191" height="699" extended-state="0" />
     <editor active="false" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Nl-Palette" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.40680712" sideWeight="0.5105008" order="7" side_tool="true" content_ui="tabs" />
-      <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32006633" sideWeight="0.4961905" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3196931" sideWeight="0.4961905" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.050080776" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Properties" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
@@ -1117,18 +1270,18 @@
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32669982" sideWeight="0.48949918" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4543947" sideWeight="0.4961905" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32090762" sideWeight="0.4961905" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.77759475" sideWeight="0.48949918" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4539642" sideWeight="0.4961905" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3196931" sideWeight="0.4961905" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Palette&#9;" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Image Layers" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Java Enterprise" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32920793" sideWeight="0.4961905" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Java Enterprise" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3286445" sideWeight="0.4961905" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.5953565" sideWeight="0.4961905" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Spring" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32920793" sideWeight="0.4961905" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32669982" sideWeight="0.4961905" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.29268292" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32992327" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Spring" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3286445" sideWeight="0.4961905" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32608697" sideWeight="0.4961905" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.31418625" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Web" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Theme Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
@@ -1137,7 +1290,7 @@
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32736573" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
     </layout>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -1148,10 +1301,18 @@
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/sun/playcat/common/GsonBinder.java</url>
+          <line>38</line>
+          <properties />
+          <option name="timeStamp" value="183" />
+        </line-breakpoint>
+      </breakpoints>
       <breakpoints-dialog>
         <breakpoints-dialog />
       </breakpoints-dialog>
-      <option name="time" value="179" />
+      <option name="time" value="194" />
     </breakpoint-manager>
     <watches-manager />
   </component>
@@ -1160,209 +1321,6 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/sun/playcat/domain/Token.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="244">
-          <caret line="49" column="0" lean-forward="false" selection-start-line="49" selection-start-column="0" selection-end-line="49" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/apache/logging/log4j/log4j-api/2.8.2/log4j-api-2.8.2.jar!/org/apache/logging/log4j/Logger.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="184">
-          <caret line="166" column="9" lean-forward="false" selection-start-line="166" selection-start-column="9" selection-end-line="166" selection-end-column="9" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/sun/playcat/common/Log.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="225">
-          <caret line="24" column="5" lean-forward="false" selection-start-line="24" selection-start-column="5" selection-end-line="24" selection-end-column="5" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/log4j2.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1110">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/sun/playcat/mapping/UserDao.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
-          <caret line="65" column="17" lean-forward="false" selection-start-line="65" selection-start-column="15" selection-end-line="65" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/mybatis/mybatis/3.4.4/mybatis-3.4.4.jar!/org/apache/ibatis/binding/MapperProxy.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="300">
-          <caret line="32" column="0" lean-forward="false" selection-start-line="32" selection-start-column="0" selection-end-line="32" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/JedisTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
-          <caret line="27" column="26" lean-forward="true" selection-start-line="27" selection-start-column="26" selection-end-line="27" selection-end-column="26" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar:///Library/Java/JavaVirtualMachines/jdk1.8.0_111.jdk/Contents/Home/jre/lib/rt.jar!/sun/reflect/NativeMethodAccessorImpl.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="285">
-          <caret line="30" column="0" lean-forward="false" selection-start-line="30" selection-start-column="0" selection-end-line="30" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar:///Library/Java/JavaVirtualMachines/jdk1.8.0_111.jdk/Contents/Home/jre/lib/rt.jar!/sun/reflect/DelegatingMethodAccessorImpl.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="180">
-          <caret line="18" column="0" lean-forward="false" selection-start-line="18" selection-start-column="0" selection-end-line="18" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar:///Library/Java/JavaVirtualMachines/jdk1.8.0_111.jdk/Contents/Home/src.zip!/java/lang/reflect/Method.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="117">
-          <caret line="497" column="0" lean-forward="false" selection-start-line="497" selection-start-column="0" selection-end-line="497" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-aop/4.3.8.RELEASE/spring-aop-4.3.8.RELEASE.jar!/org/springframework/aop/support/AopUtils.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="111">
-          <caret line="177" column="0" lean-forward="false" selection-start-line="177" selection-start-column="0" selection-end-line="177" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-aop/4.3.8.RELEASE/spring-aop-4.3.8.RELEASE.jar!/org/springframework/aop/framework/ReflectiveMethodInvocation.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="198">
-          <caret line="72" column="0" lean-forward="false" selection-start-line="72" selection-start-column="0" selection-end-line="72" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-tx/4.3.8.RELEASE/spring-tx-4.3.8.RELEASE.jar!/org/springframework/transaction/interceptor/TransactionInterceptor.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="93">
-          <caret line="37" column="0" lean-forward="false" selection-start-line="37" selection-start-column="0" selection-end-line="37" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-tx/4.3.8.RELEASE/spring-tx-4.3.8.RELEASE.jar!/org/springframework/transaction/interceptor/TransactionAspectSupport.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="110">
-          <caret line="154" column="0" lean-forward="false" selection-start-line="154" selection-start-column="0" selection-end-line="154" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/sun/playcat/dao/EhCacheTestDao.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="75">
-          <caret line="5" column="17" lean-forward="false" selection-start-line="5" selection-start-column="17" selection-end-line="5" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/sun/playcat/service/EhCacheTestServiceImpl.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="105">
-          <caret line="17" column="5" lean-forward="true" selection-start-line="17" selection-start-column="5" selection-end-line="17" selection-end-column="5" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/EhCacheTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="210">
-          <caret line="20" column="27" lean-forward="true" selection-start-line="20" selection-start-column="27" selection-end-line="20" selection-end-column="27" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/sun/playcat/service/PCodeServiceImpl.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="56">
-          <caret line="15" column="13" lean-forward="false" selection-start-line="15" selection-start-column="13" selection-end-line="15" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-webmvc/4.3.8.RELEASE/spring-webmvc-4.3.8.RELEASE.jar!/org/springframework/web/servlet/DispatcherServlet.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="84">
-          <caret line="419" column="0" lean-forward="false" selection-start-line="419" selection-start-column="0" selection-end-line="419" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-webmvc/4.3.8.RELEASE/spring-webmvc-4.3.8.RELEASE.jar!/org/springframework/web/servlet/mvc/method/AbstractHandlerMethodAdapter.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="247">
-          <caret line="37" column="0" lean-forward="false" selection-start-line="37" selection-start-column="0" selection-end-line="37" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-webmvc/4.3.8.RELEASE/spring-webmvc-4.3.8.RELEASE.jar!/org/springframework/web/servlet/mvc/method/annotation/RequestMappingHandlerAdapter.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="84">
-          <caret line="483" column="0" lean-forward="false" selection-start-line="483" selection-start-column="0" selection-end-line="483" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-webmvc/4.3.8.RELEASE/spring-webmvc-4.3.8.RELEASE.jar!/org/springframework/web/servlet/mvc/method/annotation/ServletInvocableHandlerMethod.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="274">
-          <caret line="43" column="0" lean-forward="false" selection-start-line="43" selection-start-column="0" selection-end-line="43" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-web/4.3.8.RELEASE/spring-web-4.3.8.RELEASE.jar!/org/springframework/web/method/support/InvocableHandlerMethod.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="84">
-          <caret line="56" column="0" lean-forward="false" selection-start-line="56" selection-start-column="0" selection-end-line="56" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-aop/4.3.8.RELEASE/spring-aop-4.3.8.RELEASE.jar!/org/springframework/aop/framework/JdkDynamicAopProxy.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="101">
-          <caret line="88" column="0" lean-forward="false" selection-start-line="88" selection-start-column="0" selection-end-line="88" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-webmvc/4.3.8.RELEASE/spring-webmvc-4.3.8.RELEASE.jar!/org/springframework/web/servlet/FrameworkServlet.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="234">
-          <caret line="408" column="0" lean-forward="false" selection-start-line="408" selection-start-column="0" selection-end-line="408" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/sun/playcat/common/Code.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="105">
-          <caret line="7" column="13" lean-forward="false" selection-start-line="7" selection-start-column="13" selection-end-line="7" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/sun/playcat/dao/UserDao.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="440">
-          <caret line="51" column="42" lean-forward="false" selection-start-line="51" selection-start-column="42" selection-end-line="51" selection-end-column="42" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/sun/playcat/dao/TokenDao.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="195">
-          <caret line="14" column="15" lean-forward="false" selection-start-line="14" selection-start-column="15" selection-end-line="14" selection-end-column="15" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/UserTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="193">
-          <caret line="49" column="53" lean-forward="false" selection-start-line="49" selection-start-column="52" selection-end-line="49" selection-end-column="53" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/TokenHelpTest.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="266">
@@ -1377,74 +1335,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/sun/playcat/service/TokenServicelmpl.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="290">
-          <caret line="36" column="5" lean-forward="true" selection-start-line="36" selection-start-column="5" selection-end-line="36" selection-end-column="5" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/sun/playcat/domain/User.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="15">
-          <caret line="7" column="13" lean-forward="false" selection-start-line="7" selection-start-column="13" selection-end-line="7" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/sun/playcat/dao/FriendDao.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="150">
-          <caret line="15" column="26" lean-forward="false" selection-start-line="15" selection-start-column="15" selection-end-line="15" selection-end-column="26" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/sun/playcat/json/UserJson.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="225">
-          <caret line="94" column="21" lean-forward="true" selection-start-line="94" selection-start-column="21" selection-end-line="94" selection-end-column="21" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/sun/playcat/mapping/FriendDao.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="105">
-          <caret line="7" column="34" lean-forward="false" selection-start-line="7" selection-start-column="34" selection-end-line="7" selection-end-column="34" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/sun/playcat/json/MainAction.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="386">
-          <caret line="258" column="57" lean-forward="false" selection-start-line="258" selection-start-column="57" selection-end-line="258" selection-end-column="57" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/sun/playcat/json/FriendJson.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="180">
-          <caret line="40" column="44" lean-forward="false" selection-start-line="40" selection-start-column="33" selection-end-line="40" selection-end-column="44" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/sun/playcat/common/TokenHelp.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="195">
           <caret line="17" column="0" lean-forward="false" selection-start-line="17" selection-start-column="0" selection-end-line="17" selection-end-column="44" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/sun/playcat/json/TokenJson.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="510">
-          <caret line="49" column="32" lean-forward="true" selection-start-line="49" selection-start-column="32" selection-end-line="49" selection-end-column="32" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/sun/playcat/domain/ActionType.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="470">
-          <caret line="53" column="0" lean-forward="false" selection-start-line="53" selection-start-column="0" selection-end-line="53" selection-end-column="50" />
         </state>
       </provider>
     </entry>
@@ -1473,10 +1367,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="570">
           <caret line="55" column="14" lean-forward="false" selection-start-line="55" selection-start-column="14" selection-end-line="55" selection-end-column="14" />
-          <folding>
-            <element signature="e#1040#1041#0" expanded="true" />
-            <element signature="e#1069#1070#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1487,47 +1377,350 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/sun/playcat/service/MessageServicelmpl.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/sun/playcat/common/Log.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-165">
-          <caret line="42" column="43" lean-forward="true" selection-start-line="42" selection-start-column="43" selection-end-line="42" selection-end-column="43" />
-          <folding />
+        <state relative-caret-position="81">
+          <caret line="8" column="13" lean-forward="false" selection-start-line="8" selection-start-column="13" selection-end-line="8" selection-end-column="13" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/sun/playcat/service/UserServiceImpl.java">
+    <entry file="file://$PROJECT_DIR$/src/test/java/AreaTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="380">
-          <caret line="186" column="38" lean-forward="true" selection-start-line="186" selection-start-column="38" selection-end-line="186" selection-end-column="38" />
-          <folding />
+        <state relative-caret-position="-36">
+          <caret line="12" column="0" lean-forward="false" selection-start-line="12" selection-start-column="0" selection-end-line="13" selection-end-column="67" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/sun/playcat/domain/BaseRequest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="105">
+          <caret line="7" column="13" lean-forward="false" selection-start-line="7" selection-start-column="13" selection-end-line="7" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/GameTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="147">
+          <caret line="50" column="26" lean-forward="false" selection-start-line="50" selection-start-column="26" selection-end-line="50" selection-end-column="26" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/CollectTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="155">
+          <caret line="72" column="26" lean-forward="true" selection-start-line="72" selection-start-column="26" selection-end-line="72" selection-end-column="26" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/sun/playcat/json/BaseJson.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="210">
+          <caret line="17" column="5" lean-forward="true" selection-start-line="17" selection-start-column="5" selection-end-line="17" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/sun/playcat/json/CollectJson.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="125">
+          <caret line="19" column="36" lean-forward="false" selection-start-line="19" selection-start-column="36" selection-end-line="19" selection-end-column="36" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/sun/playcat/json/CommentJson.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="125">
+          <caret line="17" column="36" lean-forward="false" selection-start-line="17" selection-start-column="36" selection-end-line="17" selection-end-column="36" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/sun/playcat/json/GameJson.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="125">
+          <caret line="17" column="36" lean-forward="false" selection-start-line="17" selection-start-column="36" selection-end-line="17" selection-end-column="36" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/sun/playcat/json/GoodsJson.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="125">
+          <caret line="20" column="36" lean-forward="false" selection-start-line="20" selection-start-column="36" selection-end-line="20" selection-end-column="36" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/sun/playcat/json/PCodeJson.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="95">
+          <caret line="21" column="0" lean-forward="true" selection-start-line="21" selection-start-column="0" selection-end-line="21" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/com/google/code/gson/gson/2.8.1/gson-2.8.1.jar!/com/google/gson/Gson.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-375">
+          <caret line="80" column="11" lean-forward="false" selection-start-line="80" selection-start-column="11" selection-end-line="80" selection-end-column="11" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/com/google/code/gson/gson/2.8.1/gson-2.8.1.jar!/com/google/gson/internal/bind/TreeTypeAdapter.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="133">
+          <caret line="56" column="0" lean-forward="false" selection-start-line="56" selection-start-column="0" selection-end-line="56" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/sun/playcat/common/GsonBinder.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="170">
+          <caret line="18" column="30" lean-forward="false" selection-start-line="18" selection-start-column="30" selection-end-line="18" selection-end-column="30" />
+          <folding>
+            <element signature="imports" expanded="false" />
+            <element signature="e#1582#1583#0" expanded="false" />
+            <element signature="e#1633#1634#0" expanded="false" />
+            <element signature="e#2255#2256#0" expanded="false" />
+            <element signature="e#2295#2296#0" expanded="false" />
+            <element signature="e#2363#2364#0" expanded="false" />
+            <element signature="e#2410#2411#0" expanded="false" />
+            <element signature="e#2464#2465#0" expanded="false" />
+            <element signature="e#2510#2511#0" expanded="false" />
+            <element signature="e#2566#2567#0" expanded="false" />
+            <element signature="e#2601#2602#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="243">
+          <caret line="212" column="26" lean-forward="true" selection-start-line="212" selection-start-column="26" selection-end-line="212" selection-end-column="26" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/sun/playcat/common/StringConverter.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="345">
+          <caret line="23" column="23" lean-forward="true" selection-start-line="23" selection-start-column="23" selection-end-line="23" selection-end-column="23" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/sun/playcat/domain/CommentList.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="90">
+          <caret line="7" column="13" lean-forward="false" selection-start-line="7" selection-start-column="13" selection-end-line="7" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/sun/playcat/service/TokenServicelmpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="157">
+          <caret line="36" column="5" lean-forward="true" selection-start-line="36" selection-start-column="5" selection-end-line="36" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/sun/playcat/common/GsonHelp.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="75">
+          <caret line="6" column="34" lean-forward="true" selection-start-line="6" selection-start-column="34" selection-end-line="6" selection-end-column="34" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/sun/playcat/domain/User.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="166">
+          <caret line="214" column="24" lean-forward="false" selection-start-line="214" selection-start-column="24" selection-end-line="214" selection-end-column="24" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/sun/playcat/domain/Token.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="181">
+          <caret line="49" column="0" lean-forward="false" selection-start-line="49" selection-start-column="0" selection-end-line="49" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar:///Library/Java/JavaVirtualMachines/jdk1.8.0_111.jdk/Contents/Home/jre/lib/rt.jar!/sun/reflect/NativeMethodAccessorImpl.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="300">
+          <caret line="31" column="5" lean-forward="true" selection-start-line="31" selection-start-column="5" selection-end-line="31" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar:///Library/Java/JavaVirtualMachines/jdk1.8.0_111.jdk/Contents/Home/src.zip!/java/lang/Integer.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="155">
+          <caret line="829" column="0" lean-forward="false" selection-start-line="829" selection-start-column="0" selection-end-line="829" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/BaseRequestTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="70">
+          <caret line="36" column="14" lean-forward="true" selection-start-line="36" selection-start-column="14" selection-end-line="36" selection-end-column="14" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-test/4.3.8.RELEASE/spring-test-4.3.8.RELEASE.jar!/org/springframework/test/context/junit4/statements/RunAfterTestMethodCallbacks.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="234">
+          <caret line="34" column="0" lean-forward="false" selection-start-line="34" selection-start-column="0" selection-end-line="34" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/JedisTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="345">
+          <caret line="33" column="5" lean-forward="false" selection-start-line="33" selection-start-column="5" selection-end-line="33" selection-end-column="5" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/sun/playcat/controller/ApiController.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="335">
-          <caret line="61" column="13" lean-forward="true" selection-start-line="61" selection-start-column="13" selection-end-line="61" selection-end-column="13" />
-          <folding />
+        <state relative-caret-position="367">
+          <caret line="74" column="5" lean-forward="false" selection-start-line="74" selection-start-column="5" selection-end-line="74" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/sun/playcat/service/MessageServicelmpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="322">
+          <caret line="42" column="43" lean-forward="false" selection-start-line="42" selection-start-column="43" selection-end-line="42" selection-end-column="43" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/junit/junit/4.12/junit-4.12-sources.jar!/org/junit/internal/runners/model/ReflectiveCallable.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="195">
+          <caret line="13" column="0" lean-forward="false" selection-start-line="13" selection-start-column="0" selection-end-line="13" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/sun/playcat/service/UserServiceImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1950">
+          <caret line="186" column="38" lean-forward="true" selection-start-line="186" selection-start-column="38" selection-end-line="186" selection-end-column="38" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/sun/playcat/domain/ActionType.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="810">
+          <caret line="54" column="0" lean-forward="false" selection-start-line="54" selection-start-column="0" selection-end-line="54" selection-end-column="42" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/sun/playcat/json/MainAction.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="3855">
+          <caret line="265" column="39" lean-forward="false" selection-start-line="265" selection-start-column="39" selection-end-line="265" selection-end-column="39" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/sun/playcat/mapping/UserDao.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="315">
+          <caret line="31" column="63" lean-forward="true" selection-start-line="31" selection-start-column="46" selection-end-line="31" selection-end-column="63" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/sun/playcat/mapping/FriendDao.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="240">
+          <caret line="94" column="62" lean-forward="false" selection-start-line="94" selection-start-column="62" selection-end-line="94" selection-end-column="62" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/sun/playcat/json/FriendJson.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="780">
+          <caret line="59" column="53" lean-forward="false" selection-start-line="59" selection-start-column="53" selection-end-line="59" selection-end-column="53" />
+          <folding>
+            <element signature="imports" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/sun/playcat/mapping/MessageDao.xml">
       <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="210">
+          <caret line="20" column="0" lean-forward="false" selection-start-line="20" selection-start-column="0" selection-end-line="21" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/sun/playcat/json/MessageHelp.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="195">
+          <caret line="13" column="28" lean-forward="true" selection-start-line="13" selection-start-column="28" selection-end-line="13" selection-end-column="28" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/FriendTest.java">
+      <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="225">
-          <caret line="15" column="35" lean-forward="false" selection-start-line="15" selection-start-column="35" selection-end-line="15" selection-end-column="35" />
-          <folding>
-            <marker date="1509858026000" expanded="true" signature="946:1700" ph="select a.*,b... message" />
-            <marker date="1509858026000" expanded="true" signature="1825:2014" ph="insert into message... " />
-            <marker date="1509858026000" expanded="true" signature="2090:2207" ph="update messa... " />
-          </folding>
+          <caret line="25" column="37" lean-forward="false" selection-start-line="25" selection-start-column="37" selection-end-line="25" selection-end-column="37" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/sun/playcat/json/MessageJson.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="71">
-          <caret line="76" column="14" lean-forward="false" selection-start-line="76" selection-start-column="14" selection-end-line="76" selection-end-column="14" />
+        <state relative-caret-position="230">
+          <caret line="102" column="18" lean-forward="true" selection-start-line="102" selection-start-column="18" selection-end-line="102" selection-end-column="18" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/sun/playcat/dao/FriendDao.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="240">
+          <caret line="21" column="56" lean-forward="true" selection-start-line="21" selection-start-column="56" selection-end-line="21" selection-end-column="56" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/sun/playcat/json/UserJson.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2025">
+          <caret line="150" column="53" lean-forward="false" selection-start-line="150" selection-start-column="49" selection-end-line="150" selection-end-column="53" />
+          <folding>
+            <element signature="imports" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/sun/playcat/json/TokenJson.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="420">
+          <caret line="43" column="0" lean-forward="false" selection-start-line="43" selection-start-column="0" selection-end-line="44" selection-end-column="57" />
+          <folding>
+            <element signature="imports" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/sun/playcat/service/FriendServicelmpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="375">
+          <caret line="35" column="17" lean-forward="false" selection-start-line="35" selection-start-column="11" selection-end-line="35" selection-end-column="17" />
+          <folding>
+            <element signature="imports" expanded="false" />
+            <element signature="e#1080#1081#0" expanded="false" />
+            <element signature="e#1120#1121#0" expanded="false" />
+            <element signature="e#1187#1188#0" expanded="false" />
+            <element signature="e#1243#1244#0" expanded="false" />
+            <element signature="e#1301#1302#0" expanded="false" />
+            <element signature="e#1353#1354#0" expanded="false" />
+            <element signature="e#1424#1425#0" expanded="false" />
+            <element signature="e#1475#1476#0" expanded="false" />
+            <element signature="e#1548#1549#0" expanded="false" />
+            <element signature="e#1600#1601#0" expanded="false" />
+            <element signature="e#1675#1676#0" expanded="false" />
+            <element signature="e#1731#1732#0" expanded="false" />
+            <element signature="e#1802#1803#0" expanded="false" />
+            <element signature="e#1863#1864#0" expanded="false" />
+            <element signature="e#1924#1925#0" expanded="false" />
+            <element signature="e#1970#1971#0" expanded="false" />
+            <element signature="e#2029#2030#0" expanded="false" />
+            <element signature="e#2073#2074#0" expanded="false" />
+            <element signature="e#2130#2131#0" expanded="false" />
+            <element signature="e#2173#2174#0" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -1541,7 +1734,7 @@
           <splitter-proportions>
             <option name="proportions">
               <list>
-                <option value="0.26378676" />
+                <option value="0.2454044" />
                 <option value="0.5" />
               </list>
             </option>
@@ -1554,7 +1747,7 @@
           <splitter-proportions>
             <option name="proportions">
               <list>
-                <option value="0.26378676" />
+                <option value="0.2454044" />
               </list>
             </option>
           </splitter-proportions>
@@ -1565,7 +1758,7 @@
           <splitter-proportions>
             <option name="proportions">
               <list>
-                <option value="0.4053309" />
+                <option value="0.2454044" />
               </list>
             </option>
           </splitter-proportions>
@@ -1577,7 +1770,7 @@
           <splitter-proportions>
             <option name="proportions">
               <list>
-                <option value="0.2867647" />
+                <option value="0.2454044" />
               </list>
             </option>
           </splitter-proportions>
@@ -1589,7 +1782,7 @@
           <splitter-proportions>
             <option name="proportions">
               <list>
-                <option value="0.26378676" />
+                <option value="0.4053309" />
               </list>
             </option>
           </splitter-proportions>
@@ -1601,7 +1794,7 @@
           <splitter-proportions>
             <option name="proportions">
               <list>
-                <option value="0.4053309" />
+                <option value="0.2454044" />
               </list>
             </option>
           </splitter-proportions>

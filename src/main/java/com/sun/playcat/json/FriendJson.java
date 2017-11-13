@@ -47,8 +47,18 @@ public class FriendJson extends BaseJson {
         }else{
             friendService.insert(friend);
             baseResult=MessageHelp.BuildBaseResult(0,
-                    "", ActionType.FRIEND_ADD,"添加成功，等待通过");
+                    "", ActionType.FRIEND_ADD,"添加成功");
         }
+
+        return gson.toJson(baseResult);
+    }
+    public String delete(BaseRequest baseRequest){
+        Friend friend=gson.fromJson(baseRequest.getData(),Friend.class);
+        //是否重复添加
+        friendService.delete(friend);
+        BaseResult baseResult;
+            baseResult=MessageHelp.BuildBaseResult(0,
+                    "", ActionType.FRIEND_DEL,"取消成功");
 
         return gson.toJson(baseResult);
     }

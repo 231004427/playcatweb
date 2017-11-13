@@ -47,7 +47,7 @@ public class TokenJson extends BaseJson {
         user=userService.login(user);
         if(user!=null){
             //生成Token
-            token= TokenHelp.getObj(10014);
+            token= TokenHelp.getObj(user.getId());
             token.setUser_id(user.getId());
             tokenService.delete(user.getId());
             tokenService.insert(token);

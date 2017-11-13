@@ -3,6 +3,7 @@ package com.sun.playcat.json;
 import com.google.gson.Gson;
 import com.google.gson.GsonBuilder;
 import com.sun.playcat.common.Code;
+import com.sun.playcat.common.GsonHelp;
 import com.sun.playcat.dao.PCodeDao;
 import com.sun.playcat.domain.ActionType;
 import com.sun.playcat.domain.BaseRequest;
@@ -20,7 +21,7 @@ public class PCodeJson  {
     private WebApplicationContext webApplicationContext;
 
     public PCodeJson(WebApplicationContext context){
-        gson=new GsonBuilder().create();
+        gson= GsonHelp.getGsonObj();
         webApplicationContext=context;
         pCodeDao=(PCodeDao) webApplicationContext.getBean("pCodeService");
     }

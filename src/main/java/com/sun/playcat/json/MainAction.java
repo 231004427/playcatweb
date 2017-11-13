@@ -1,6 +1,8 @@
 package com.sun.playcat.json;
 
 import com.google.gson.Gson;
+import com.google.gson.GsonBuilder;
+import com.sun.playcat.common.GsonHelp;
 import com.sun.playcat.domain.ActionType;
 import com.sun.playcat.domain.BaseRequest;
 import com.sun.playcat.domain.User;
@@ -14,7 +16,7 @@ import javax.servlet.http.HttpServletRequest;
 public class MainAction {
     public static String BuildJsonWeb(
             WebApplicationContext webContext,HttpServletRequest req, String requestJson) {
-        Gson gson=new Gson();
+        Gson gson= GsonHelp.getGsonObj();
         BaseRequest baseResult=gson.fromJson(requestJson,BaseRequest.class);
 
 
@@ -257,6 +259,11 @@ public class MainAction {
         if(actionNum==ActionType.MESSAGE_ADD_FRIEND){
             MessageJson messageJson=new MessageJson(webContext);
             returnJson=messageJson.addFriend(baseResult);
+        }
+        //取消朋友
+        if(actionNum==ActionType.FRIEND_DEL){
+            FriendJson friendJson=new FriendJson(webContext);
+            returnJson=friendJson.delete(baseResult);
         }
         return returnJson;
         }

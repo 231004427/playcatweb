@@ -1,4 +1,5 @@
 import com.google.gson.Gson;
+import com.google.gson.GsonBuilder;
 import com.sun.playcat.dao.CollectDao;
 import com.sun.playcat.domain.ActionType;
 import com.sun.playcat.domain.BaseResult;
@@ -67,7 +68,9 @@ public class CollectTest {
     @Test
     public void getJson()
     {
-        Gson gson=new Gson();
+        Gson gson= new GsonBuilder()
+                .setDateFormat("yyyy-MM-dd HH:mm:ss")
+                .create();
         Collect collect=new Collect();
         collect.setUid(10012);
         collect.setSid(1);

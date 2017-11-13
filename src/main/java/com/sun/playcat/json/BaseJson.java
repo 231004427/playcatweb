@@ -2,6 +2,7 @@ package com.sun.playcat.json;
 
 import com.google.gson.Gson;
 import com.google.gson.GsonBuilder;
+import com.sun.playcat.common.GsonHelp;
 import org.springframework.web.context.WebApplicationContext;
 
 /**
@@ -12,7 +13,7 @@ public class BaseJson {
     public WebApplicationContext webApplicationContext;
 
     public BaseJson(WebApplicationContext context){
-        gson=new GsonBuilder().create();
+        gson= GsonHelp.getGsonObj();
         webApplicationContext=context;
     }
 }

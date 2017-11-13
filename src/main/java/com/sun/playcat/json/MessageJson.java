@@ -22,6 +22,15 @@ public class MessageJson extends BaseJson {
     }
     public String add(BaseRequest baseRequest){
         Message message=gson.fromJson(baseRequest.getData(),Message.class);
+
+        //判断是否是朋友
+        Friend friend=new Friend();
+        friend.setUser_id(message.getFrom_user());
+        friend.setFriend_id(message.getTo_user());
+        if(friendService.get(friend)==null){
+            return gson.toJson(MessageHelp.BuildBaseResult(1,
+                    "发送失败，已经不是好友:(",ActionType.MESSAGE_ADD,""));
+        }
         messageService.insert(message);
         return gson.toJson(MessageHelp.BuildBaseResult(0,
                 "",ActionType.MESSAGE_ADD,"",gson.toJson(message)));
@@ -66,7 +75,7 @@ public class MessageJson extends BaseJson {
         Message message=gson.fromJson(baseRequest.getData(),Message.class);
         //是否重复添加
         Friend friend=new Friend();
-        friend.setUser_id(Integer.parseInt(message.getData()));
+        friend.setUser_id(Integer.parseInt(message.getData().split("\\|")[0]));
         friend.setFriend_id(message.getTo_user());
         int count= friendService.insertCount(friend);
         BaseResult baseResult;
@@ -90,10 +99,10 @@ public class MessageJson extends BaseJson {
                 //添加新消息
                 messageService.insert(message);
                 baseResult=MessageHelp.BuildBaseResult(0,
-                        "",ActionType.MESSAGE_ADD_FRIEND,"申请成功,等待通过");
+                        "",ActionType.MESSAGE_ADD_FRIEND,"申请成功,等待通过",gson.toJson(message));
             }else{
                 baseResult=MessageHelp.BuildBaseResult(0,
-                        "",ActionType.MESSAGE_ADD_FRIEND,"您已申请,请耐心等待");
+                        "",ActionType.MESSAGE_ADD_FRIEND,"重复申请,请耐心等待");
             }
 
         }

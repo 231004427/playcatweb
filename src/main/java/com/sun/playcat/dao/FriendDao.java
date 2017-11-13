@@ -13,6 +13,8 @@ import java.util.List;
 @MapperScan
 public interface FriendDao {
     public void insert(Friend friend);
+    public Friend get(Friend friend);
+    public void delete(Friend friend);
     public int searchCount(FriendList friendList);
     public int insertCount(Friend friend);
     public List<Friend> search(FriendList friendList);

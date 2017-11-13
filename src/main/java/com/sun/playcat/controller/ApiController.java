@@ -2,6 +2,7 @@ package com.sun.playcat.controller;
 
 import com.google.gson.Gson;
 import com.google.gson.GsonBuilder;
+import com.sun.playcat.common.GsonHelp;
 import com.sun.playcat.common.Log;
 import com.sun.playcat.dao.UserDao;
 import com.sun.playcat.domain.ActionType;
@@ -61,12 +62,13 @@ public class ApiController {
         };
         try {
             json= URLDecoder.decode(json, "UTF-8");
+            //Log.debug(json);
             WebApplicationContext webContext=ContextLoader.getCurrentWebApplicationContext();
             //返回数据
             return MainAction.BuildJsonWeb(webContext,req,json);
         } catch (Exception e) {
             Log.error(e.toString());
-            Gson gson = new GsonBuilder().create();
+            Gson gson = GsonHelp.getGsonObj();
             return gson.toJson(MessageHelp.BuildBaseResult(1,
                     "系统错误",-1,"服务器错误"));
         }

@@ -2,6 +2,7 @@ package com.sun.playcat.json;
 
 import com.google.gson.Gson;
 import com.google.gson.GsonBuilder;
+import com.sun.playcat.common.GsonHelp;
 import com.sun.playcat.dao.CollectDao;
 import com.sun.playcat.domain.*;
 import org.springframework.web.context.WebApplicationContext;
@@ -16,7 +17,7 @@ public class CollectJson {
     private CollectDao collectService;
 
     public CollectJson(WebApplicationContext context){
-        gson=new GsonBuilder().create();
+        gson= GsonHelp.getGsonObj();
         webApplicationContext=context;
         collectService=(CollectDao) webApplicationContext.getBean("collectService");
     }
